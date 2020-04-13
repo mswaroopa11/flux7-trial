@@ -12,10 +12,7 @@
           disable_e
           template: "./cft.yml"
           template_parameters:
-            # KeyName: "jmartin"
-            # DiskType: "ephemeral"
-            # InstanceType: "m1.small"
-            # ClusterSize: 3
+         # We could store the values of the paramters in the vault in ansible vault in for security purposes.
             KeyName: roopakeypair
             DBPassword: aditya11
             DBRootPassword: harina11

@@ -7,11 +7,16 @@
 
 # You will need the following:
 
-    An AWS account. aws configure with an account with programmatic access. 
     Install Python 3.6.9
     Install ansible 2.8.6
-    Install the AWS CLI (pip3 install awscli)    
-    A repository link(If you have concerns about this, let us know!)
+    Install the AWS CLI  
+    A repository link
+
+# Pre-requisites:
+    
+    An AWS account. aws configure with an account with programmatic access. 
+    You need to replace KeyName: roopakeypair for ansible-playbook to run successfully
+
 
 # Deploying the current stack
 
