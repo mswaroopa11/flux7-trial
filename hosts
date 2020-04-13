@@ -1,0 +1,6 @@
+[local]
+localhost ansible_connection=local
+
+[php]
+99.48.51.97 ansible_ssh_user=scg
+

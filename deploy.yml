@@ -1,0 +1,25 @@
+---
+  - name: Deploy php webserver
+    hosts: local
+    connection: local
+
+    tasks:
+      - name: create a cloudformation stack
+        cloudformation:
+          stack_name: "ansible-cloudformation-php"
+          state: "present"
+          region: "us-east-1"
+          disable_e
+          template: "./cft.yml"
+          template_parameters:
+            # KeyName: "jmartin"
+            # DiskType: "ephemeral"
+            # InstanceType: "m1.small"
+            # ClusterSize: 3
+            KeyName: roopakeypair
+            DBPassword: aditya11
+            DBRootPassword: harina11
+            DBUsername: roopa11
+          tags:
+            Stack: "ansible-cloudformation"
+
