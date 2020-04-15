@@ -16,6 +16,7 @@
     
     An AWS account. aws configure with an account with programmatic access. 
     You need to replace KeyName: roopakeypair for ansible-playbook to run successfully
+    Unique stack name for cloud formation template
 
 
 # Deploying the current stack
